@@ -1,0 +1,27 @@
+<h1>Listing Users</h1>
+ 
+<table>
+  <tr>
+    <th>Fname</th>
+    <th>Lname</th>
+    <th>UserName</th>
+    <th>Email</th>
+    <th>Password</th>
+    <th>image</th>
+    
+  </tr>
+ 
+  <% @users.each do |user| %>
+    <tr>
+      <td><%= user.Fname %></td>
+      <td><%= user.Lname %></td>
+      <td><%= user.UserName %></td>
+      <td><%= user.Email %></td>
+      <td><%= user.Password %></td>
+      <td><%= user.image %></td>
+     
+    </tr>
+  <% end %>
+</table>
+<%= link_to 'New SignUp', new_user_path %>
+ <%= link_to 'Log in', login_path %>

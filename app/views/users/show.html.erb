@@ -1,0 +1,35 @@
+<p><%= Users %></p>
+
+<p>
+  <strong>Fame:</strong>
+  <%= @user.Fname %>
+</p>
+
+<p>
+  <strong>Lame:</strong>
+  <%= @user.Lname %>
+</p>
+
+<p>
+<strong>USERNAME</strong>
+<%= @user.UserName %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.Email %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @user.Password %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @user.image %>
+</p>
+
+
+<%= link_to 'Back', users_path %>
+<%= link_to 'Log in', login_path %>

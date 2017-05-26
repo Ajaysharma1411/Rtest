@@ -1,0 +1,39 @@
+<center><h1>SIGN UP</h1>
+<%= form_for :user, url: users_path do |f| %>
+  
+
+  <p>
+    <%= f.label :Fname %>
+    <%= f.text_field :Fname, placeholder: 'First Name', label: false %>
+ </p>
+
+<p>
+    <%= f.label :Lname %>
+    <%= f.text_field :Lname, placeholder: 'Last Name', label: false %>
+ </p>
+
+<p>
+    <%= f.label :UserName %>
+    <%= f.text_field :UserName, placeholder: 'User Name', label: false %>
+ </p>
+
+  <p>
+    <%= f.label :Email %>
+    <%= f.email_field :Email, placeholder: 'Email', label: false %>
+  </p>
+
+  <p>
+    <%= f.label :Password %>
+    <%= f.password_field :Password, placeholder: 'Password', label: false %>
+  </p>
+
+  <p>
+    <%= f.label :image %>
+    <%= f.file_field :image, placeholder: 'Image', label: false %>
+  </p>
+
+  <p>
+    <%= f.submit 'SignUp'%>
+  </p>
+<% end %>
+</center>

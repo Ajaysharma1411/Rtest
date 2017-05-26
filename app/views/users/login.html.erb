@@ -1,0 +1,19 @@
+<h1>Login</h1>
+
+<%= form_for :user, url: logged_in_path do |f| %>
+  
+
+<p>
+    <%= f.label :UserName %>
+    <%= f.text_field :UserName, placeholder: 'User Name', label: false %>
+ </p>
+
+
+  <p>
+    <%= f.label :Password %>
+    <%= f.password_field :Password, placeholder: 'Password', label: false %>
+  </p>
+  <p>
+<%= submit_tag "Submit" %>
+</p>
+<%end%>
